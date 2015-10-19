@@ -11,11 +11,11 @@
     <script src="js/gitUserSearchController.js"></script>
   </head>
 
-  <body ng-controller="GitUserSearchController as searchCtrl">
+  <body class="container" ng-controller="GitUserSearchController as searchCtrl">
     <div>
       <form class="form-horizontal">
         <input type="text" >
-        <button class="btn">Search</button>
+        <button class="btn" ng-click="searchCtrl.doSearch()">Search</button>
       </form>
 
       <ul class="list-group">
